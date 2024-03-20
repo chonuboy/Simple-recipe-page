@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:max(1.2rem,2.5vh);
+}
+h1{
+    color: black;
+}
+img{
+    width: 100vw;
+    height: 36vh;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #726e6b;
+    gap: 20px;
+    padding: 60px;  
+}
+.main__para{
+    margin-top: 10px;
+}
+.main__preperation{
+    color: #670a2e;
+    background-color: rgb(255, 247, 252);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+.main__preperation-list{
+    display: flex;
+    list-style-position: outside;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: outside;
+    padding: 0 35px;
+}
+.main__preperation-list span{
+    margin-left: 5px;
+}
+
+.preperation__list-item,.main__instructions-list span{
+    color: #62595b;
+    font-weight: 700;
+}
+.preperation__list-desc{
+    color: #726e6b;
+}
+
+.main__ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main__ingredients-list{
+    display: flex;
+    flex-direction: column;
+    list-style-position: outside;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.main__ingredients-list p,.main__instructions-list p{
+    margin-left: 20px;
+    color: #726e6b;
+}
+
+.main__ingredients h2,.main__instructions h2,.main__nutrition h2,.main__instructions-list li,.main__ingredients-list{
+    color:#7c4028;
+}
+hr{
+    width:80w;
+}
+
+.main__instructions,.main__nutrition-table{
+    margin-top: 20px;
+}
+
+.main__instructions-list{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    list-style-position: outside;
+}
+.main__nutrition{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.main__nutrition-table div{
+    display: grid;
+    margin-top: 10px;
+    justify-content: space-around;
+    grid-template-rows: repeat(4,0.2fr);
+    grid-template-columns: repeat(2,0.2fr);
+}
+
+.main__nutrition-table div span{
+    color: #7c4028;
+    font-weight: 800;
+}
+
+
+
+@media screen and (min-width:768px) {
+    
+    body{
+        background-color: #f3e5d8;
+        padding: 100px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    main{
+        background-color: white;
+        border-radius: 30px;
+        width: 60vw;
+    }
+    .main__image{
+        padding: 2.1rem;
+    }
+    .container{
+        padding: 2.3rem;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 50vh;
+        border-radius: 20px;
+    }
+    
+}
